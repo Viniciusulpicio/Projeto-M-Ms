@@ -1,4 +1,4 @@
-# Projeto de Desenvolvimento de Sistemas - Título do Seu Projeto
+# SIte com inspiração na loja M&Ms
 
 Este projeto foi desenvolvido por Vinicius Sulpicio como parte do curso de Desenvolvimento de Sistemas. O objetivo é criar um site de login simples com funcionalidades básicas.
 
