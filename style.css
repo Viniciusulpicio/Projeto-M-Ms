@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    background-color: #FFF;
+    height: 100px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    border-color: black;
+    border-bottom: solid;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+}
+
+.pesquisa input {
+    border-radius: 15px;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+#lupa {
+    background: url(./img/lupa.png) no-repeat right / 1.3em;
+    padding-left: 1.3em;
+    background-color: #cfcfcf;
+}
+
+.corpo {
+    background-color: #FFD43E;
+    height: 100vb;
+    width: 100%;
+}
+
+.brasil,
+.shop,
+.user {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.mmlogo {
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 30px;
+}
+
+.mmcanto1 {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.mmcanto2 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+#home{
+    background-color: #ffeba4;
+    width: 1000px;
+    height: 350px;
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    border-radius: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+#carrosel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.corpoProd {
+    background-color: #f3f6fb;
+    height: 100vb;
+    width: 100%;
+}
+
+#produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#produtos img{
+    margin-top: 4em;
+}
+
+.corpoFale {
+    background-color: #1072df;
+}
+
+.contato{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+}
+
+
+
+#png_produtos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* ou ajuste para o tamanho desejado */
+}
+

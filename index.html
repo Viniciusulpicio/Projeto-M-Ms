@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>Login</title>
+  <link rel="icon" href="/img/m_logo_webp.webp">
+  <link rel="stylesheet" href="style_login.css">
+</head>
+
+<body>
+
+  <div class="head">
+
+    <div class="pesquisa">
+      <input type="text" id="lupa">
+    </div>
+
+    <div id="brasil">
+      <img src="/img/brasil.jpeg" width="30px" alt="brasil">
+    </div>
+
+    <div id="compras">
+      <img src="/img/carrinho.png" width="30px" alt="carrinho">
+    </div>
+
+    <div id="user">
+      <img src="/img/user.png" width="30px" alt="carrinho">
+    </div>
+
+    <div class="Logo_M">
+      <img src="/img/logo.png" alt="logo" width="300px">
+    </div>
+  </div>
+
+  <div class="corpo">
+
+    <div class="direita">
+      <img src="/img/Barras direita.png" alt="barras_direita" width="435px">
+    </div>
+    <div class="esquerda">
+      <img src="/img/Barras-Esquerda.png" alt="barras_esquerda" width="350px">
+    </div>
+
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="login-container">
+          <div class="text-center">
+            <button type="button" id="login-button">
+              <img src="/img/m_logo_webp.webp" alt="Login" width="70">
+            </button>
+            <h1>Tela login</h1>
+          </div>
+          <form id="login-form" onsubmit="event.preventDefault(); authenticate();">
+            <div class="mb-3">
+              <label for="username" class="form-label">Nome do Usuário:</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="password" class="form-label">Senha:</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-danger">Cadastrar</button>
+              <button type="submit" class="btn btn-outline-success">Enviar</button>
+            </div>
+          </form>
+          <div class="mb-3">
+            <p id="error-message" class="error"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("login-button").addEventListener("click", function () {
+      document.getElementById("username").value = "admin";
+      document.getElementById("password").value = "123";
+    });
+
+    function authenticate() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "123") {
+        alert("Seja bem-vindo, Vini! Incrível rei do universo, o melhor de todos, super maravilhoso e perfeito.");
+        window.location.href = "home.html";
+      } else {
+        alert("Credenciais inválidas. Tente novamente.");
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
